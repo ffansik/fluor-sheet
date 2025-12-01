@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Рабочий лист: Фтор</title>
+<style>
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sheet {
+    width: 850px;
+    border: 1px solid #333;
+    padding: 25px;
+    background-color: #000;
+    box-shadow: 0 0 25px rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 0 0 25px 0;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    letter-spacing: 2px;
+    animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+    50% { text-shadow: 0 0 25px rgba(255,255,255,0.6); }
+    100% { text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+}
+
+h2 {
+    color: #e8e8e8;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+}
+
+.left-col, .right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 15px;
+    background: linear-gradient(145deg, #111, #000);
+    box-shadow: 0 0 10px rgba(255,255,255,0.15);
+    animation: boxGlow 3s infinite;
+}
+
+@keyframes boxGlow {
+    0% { box-shadow: 0 0 10px rgba(255,255,255,0.1); }
+    50% { box-shadow: 0 0 20px rgba(255,255,255,0.3); }
+    100% { box-shadow: 0 0 10px rgba(255,255,255,0.1); }
+}
+
+.info-text {
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.reaction {
+    font-family: 'Courier New', monospace;
+    background-color: #111;
+    padding: 6px;
+    margin: 6px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(255,255,255,0.15) inset;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.image-caption {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #aaa;
+}
+
+.task-line {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 60px;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+}
+
+.long-input {
+    width: 95%;
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+@media print {
+    body { -webkit-print-color-adjust: exact; }
+    .sheet { box-shadow: none; }
+}
+
+@media (max-width: 900px) {
+    .sheet { width: 95%; padding: 15px; }
+    .container { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="sheet">
+    <h1>ФТОР (F)</h1>
+
+    <div class="container">
+        <div class="left-col">
+            <div class="box">
+                <h2>Общая характеристика</h2>
+                <p class="info-text">
+                    Химический элемент VII группы (галоген).<br>
+                    Атомный номер: <b>9</b><br>
+                    Атомная масса: <b>≈ 19</b><br>
+                    Самый электроотрицательный элемент. Реагирует почти со всем, даже с водой.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>Физические свойства</h2>
+                <ul class="info-text">
+                    <li>Бледно-жёлтый газ.</li>
+                    <li>Резкий удушающий запах.</li>
+                    <li>Очень токсичен.</li>
+                    <li>Легко ожиживается при охлаждении.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Химические свойства</h2>
+                <p class="info-text">Фтор — самый активный неметалл, вызывает воспламенение многих веществ.</p>
+                <div class="reaction">H<sub>2</sub> + F<sub>2</sub> → 2HF (взрыв)</div>
+                <div class="reaction">2F<sub>2</sub> + 2H<sub>2</sub>O → 4HF + O<sub>2</sub></div>
+                <div class="reaction">Ca + F<sub>2</sub> → CaF<sub>2</sub></div>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="box">
+                <img src="https://us.123rf.com/450wm/amin268/amin2681704/amin268170400385/76274620-cracked-tooth-solid-icon.jpg?ver=6" alt="Зубная эмаль">
+                <div class="image-caption">Фтор укрепляет зубную эмаль и предотвращает кариес</div>
+
+                <h2>Биологическая роль</h2>
+                <p class="info-text">
+                    Фториды делают зубную эмаль прочнее и устойчивее к кислотам. Недостаток фтора вызывает быстрое разрушение эмали.
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="C:\Users\maste\Desktop\Новая папка\ChatGPT Image 1 дек. 2025 г., 17_30_39.png" alt="Тефлон">
+                <div class="image-caption">Тефлон — известный фторсодержащий полимер</div>
+
+                <h2>Применение</h2>
+                <p class="info-text">
+                    Фтор используют в производстве тефлона, пластмасс, хладагента фреона, медикаментов и высокопрочных материалов.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box" style="margin-top: 10px;">
+        <h2>Задание 1. Истина или Ложь?</h2>
+        <div class="info-text">
+            <div class="task-line">1. Фтор — газ фиолетового цвета. — <input type="text"></div>
+            <div class="task-line">2. Фтор не встречается в природе. — <input type="text"></div>
+            <div class="task-line">3. Фтор — самый активный галоген. — <input type="text"></div>
+            <div class="task-line">4. Вода горит во фторе. — <input type="text"></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Вопросы для самоконтроля</h2>
+        <div class="info-text">
+            <div class="task-line">1. Для чего человеку нужен фтор?<br>
+            <input type="text" class="long-input"></div>
+
+            <div class="task-line">2. Почему эмаль без фтора разрушается быстрее?<br>
+            <input type="text" class="long-input"></div>
+
+            <div class="task-line">3. Где встречаются фториды в природе и быту?<br>
+            <input type="text" class="long-input"></div>
+
+            <div class="task-line">4. Почему фтор считается самым активным галогеном?<br>
+            <input type="text" class="long-input"></div>
+
+            <div class="task-line">5. Почему соединения фтора используют в тефлоновом покрытии?<br>
+            <input type="text" class="long-input"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
